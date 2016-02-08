@@ -1,0 +1,135 @@
+/*Set page wide font and align everything to the center. Added an image as a background
+if image fails to load, background will be black instead.*/
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  text-align: center;
+  background: url("../img/background.png");
+  background-repeat: repeat;
+  background-color: black; 
+
+}
+
+/*NAVIGATION BAR STUFF*/
+/*Set navigation bar color and layout*/
+nav {
+  background-color: #B6B6B6;
+  border-radius: 4px;
+  display: block; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+  }
+/*Makes the html list be a block and controls the color change transition*/
+    nav ul li {
+      display: inline-block;
+      list-style-type: none;
+      /*Thanks to google for the help with color transitions*/
+        transition: all 0.2s; 
+    }
+/*Change padding between menus and letter color */
+      nav > ul > li > a {
+        color: white;
+        display: block;
+        line-height: 40px;
+        padding: 0 30px;
+        text-decoration: none;
+      }
+/*Changes the color when mouse over */
+        nav > ul > li:hover {
+          background-color: black;
+        }
+        
+/*Setting up the form layout*/
+/*Set the background color, width, and rounded corners*/
+form {
+  background: #E05151;
+  width: 60%;
+  margin: 10% auto;
+  border-radius: 5px 5px 5px 5px;
+  min-width: 10%
+}
+
+/*Make the header bigger and all uppercase letters. Changing some spacing as well. And add some padding*/
+.header {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-top: 10px;
+}
+
+/*Changing the font characteristics to the description*/
+.description {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: -2px 0 0px;
+  padding: 0 10% 0 10%
+}
+
+/*BUTTON AND FIELD PROPERTIES*/
+.fields {
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+/*Made the input fields bigger, easier for mobile access*/
+.button {
+  height: 44px;
+  border: none;
+}
+
+/*More stylings for the input fields */
+input {
+  width: 60%;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+/*Styling for the submit button.*/
+#submit {
+  width: 100%;
+  height: 46px;
+  background: #B6B6B6;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  letter-spacing: 1px;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+/*Set color for mouseover change*/
+#submit:hover {
+  background: grey;
+}
+
+/*Set up the labels*/ 
+label{
+font-size: 10px;
+letter-spacing: 1.42px;
+text-transform: uppercase; 
+padding: 0% 50% 0% 0%  
+}
+
+/*change the width and padding for when on a small screen*/
+@media screen and (max-width: 600px){
+    form {
+        background: #E05151;
+        width: 100%;
+    }
+    
+    input{
+       width: 90% 
+    }
+    label{
+        padding-right: 60%
+    }
+    
+}       
