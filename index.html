@@ -19,7 +19,7 @@
          <!--end of navigation bar-->
         
         <!-- FORM -->
-        <form action="/" method="post" name="form">
+        <form action="#" method="post" id="form">
             <!--Title for the form-->
             <div class ="header">
                 <p>Become a beta Tester</p>
@@ -38,9 +38,10 @@
             <input type="text" id="phone" name="phone" placeholder="XXX-XXX-XXXX" onblur="validatePhone(value)">
             <!--input for password-->
             <label for="pass">Password: </label><br>
-            <input type="password" id="pass" name="pass" onblur="validatePass(value)" placeholder="">
+            <input type="password" id="pass" name="pass" placeholder="">
             <label for="pass">Retype Password: </label><br>
-            <input type="password" id="pass" name="pass" onblur="validatePass(value)" placeholder="">
+            <input type="password" id="conpass" name="conpass" onkeyup="checkPass(); return false;" placeholder="">
+            <span id="confirmMessage" class="confirmMessage"></span>
         </div>
         <!--Submit Button-->
         <input type="submit" name="submit" id="submit" value="SIGN UP">
