@@ -109,10 +109,12 @@ input {
 
 /*Set up the labels*/ 
 label{
-font-size: 10px;
+font-size: 12px;
 letter-spacing: 1.42px;
 text-transform: uppercase; 
-padding: 0% 50% 0% 0%  
+display: block; 
+padding: 5% 0% 0% 0%;
+
 }
 
 /*change the width and padding for when on a small screen*/
