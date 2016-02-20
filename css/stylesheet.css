@@ -75,11 +75,6 @@ form {
   padding-bottom: 5%;
 }
 
-/*Made the input fields bigger, easier for mobile access*/
-.button {
-  height: 44px;
-  border: none;
-}
 
 /*More stylings for the input fields */
 input {
@@ -90,6 +85,8 @@ input {
   letter-spacing: 1px;
   text-indent: 5%;
   border-radius: 5px 5px 5px 5px;
+  height: 44px;
+  border: none;
 }
 
 /*Styling for the submit button.*/
