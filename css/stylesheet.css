@@ -57,7 +57,7 @@ form {
   font-size: 35px;
   text-transform: uppercase;
   letter-spacing: 5px;
-  padding-top: 10px;
+  padding-top: 5%;
 }
 
 /*Changing the font characteristics to the description*/
@@ -71,7 +71,7 @@ form {
 
 /*BUTTON AND FIELD PROPERTIES*/
 .fields {
-  align-items: center;
+ 
   padding-bottom: 5%;
 }
 
