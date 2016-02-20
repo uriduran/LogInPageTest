@@ -75,6 +75,11 @@ form {
   padding-bottom: 5%;
 }
 
+.confirmMessage{
+    display: block;
+    padding-top: 3%;
+}
+
 
 /*More stylings for the input fields */
 input {
